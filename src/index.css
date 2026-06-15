@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --color-squid-pink: #e21a6e;
+  --color-squid-dark: #070707;
+  --color-squid-black: #000000;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(226, 26, 110, 0.5), 0 0 20px rgba(226, 26, 110, 0.3);
+  }
+  .box-glow {
+    box-shadow: 0 0 15px rgba(226, 26, 110, 0.4), 0 0 30px rgba(226, 26, 110, 0.2);
+  }
+  .grunge-texture {
+    background-image: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%),
+                      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 2px);
+  }
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #e21a6e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3388;
+}

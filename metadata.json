@@ -1,0 +1,6 @@
+{
+  "name": "Squid Game Hero Section",
+  "description": "A high-fidelity, pixel-perfect reproduction of the Squid Game interactive homepage and trailer dashboard, complete with animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
